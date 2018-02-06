@@ -9,19 +9,19 @@
 		var arr_txt = str.split(" ");
 		var num = 0;
 		
-		var sch = document.getElementById("txt").value;
+		var sat = document.getElementById("txt").value;
 		var sen = document.querySelector("input[name=cheack_list]:checked").value;
 					if(sen == "yes"){
 						for(var i = 0;i < arr_txt.length; i++){
-							if(arr_txt[i] == sch){
+							if(arr_txt[i] == sat){
 								num++;
 							}
 						}
 					}else if(sen == "no"){
 						for(var i = 0;i < arr_txt.length; i++){
-							sch2 = sch.toLocaleUpperCase();
+							sct2 = sat.toLocaleUpperCase();
 							arr_txt2 = arr_txt[i].toLocaleUpperCase();
-							if(arr_txt2 == sch2){
+							if(arr_txt2 == sct2){
 								num++;
 							}
 						}
